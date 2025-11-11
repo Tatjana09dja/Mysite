@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BWD Corporation SIA</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff8cc;
+        color: #333;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        padding: 80px 10%;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1, h2, h3 {
+        color: #222;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 56px;
+        animation: slideIn 1.2s ease-in-out;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .main-screen {
+        text-align: center;
+        background: linear-gradient(to bottom, #fff8cc, #fff2a8);
+    }
+
+    .main-screen img {
+        margin-top: 40px;
+        width: 60%;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+        from { opacity: 0; transform: translateY(-50px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .about img {
+        width: 40%;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .service {
+        width: 30%;
+        background-color: #fff5b8;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+
+    .service:hover {
+        transform: scale(1.05);
+    }
+
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .advantage {
+        width: 30%;
+        background-color: #fff4a3;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .process {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .step {
+        width: 30%;
+        background-color: #fff7b0;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .step:hover {
+        transform: scale(1.05);
+    }
+
+    .contacts {
+        text-align: center;
+        height: 100vh;
+        background: linear-gradient(to bottom, #fff7b3, #fff1a1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts img {
+        width: 120px;
+        margin-top: 30px;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- 1. Galvenais ekrāns -->
+<section class="main-screen">
+    <h1>BWD Corporation SIA</h1>
+    <p>Mēs esam uzņēmums, kas palīdz vadīt un attīstīt jūsu biznesu digitālajā laikmetā. 
+    Apvienojot vadības konsultācijas, stratēģisko plānošanu un IT atbalstu, mēs veidojam risinājumus, kas darbojas reālajā dzīvē.</p>
+    <img src="https://images.unsplash.com/photo-1739054729971-c27157b0c580?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332" alt="Business illustration">
+</section>
+
+<!-- 2. Par mums -->
+<section>
+    <h2>Mūsu stāsts un vērtības</h2>
+    <div class="about">
+        <div>
+            <p>BWD Corporation SIA ir dibināta Rīgā, apvienojot profesionāļus ar pieredzi uzņēmējdarbības konsultācijās un IT risinājumos. 
+            Mūsu mērķis ir palīdzēt klientiem pieņemt stratēģiskus lēmumus, optimizēt procesus un izmantot tehnoloģijas kā izaugsmes instrumentu. 
+            Mēs ticam, ka ilgtspējīgi uzņēmumi rodas no skaidras redzējuma un precīzas datu analīzes. 
+            Katrs mūsu projekts tiek veidots ar individuālu pieeju un dziļu iesaisti klienta biznesā.</p>
+        </div>
+        <img src="https://plus.unsplash.com/premium_photo-1664475905842-e72c57fc0624?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGNvbXB1dGVyJTIweWVsb3d8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="Team work">
+    </div>
+</section>
+
+<!-- 3. Servisi -->
+<section>
+    <h2>Mūsu risinājumi</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Vadības konsultācijas</h3>
+            <p>Mēs analizējam jūsu biznesa struktūru un piedāvājam efektīvus modeļus produktivitātes un rentabilitātes uzlabošanai. 
+            Palīdzam veidot skaidru attīstības stratēģiju un pārvaldības sistēmu.</p>
+        </div>
+        <div class="service">
+            <h3>Biznesa konsultācijas</h3>
+            <p>Sniedzam padziļinātu tirgus analīzi, finanšu plānošanu un palīdzam pieņemt datus balstītus lēmumus. 
+            Mūsu mērķis ir jūsu uzņēmuma izaugsme un stabilitāte.</p>
+        </div>
+        <div class="service">
+            <h3>IT atbalsts un integrācija</h3>
+            <p>Piedāvājam IT infrastruktūras uzturēšanu, datu drošības risinājumus un automatizācijas ieviešanu. 
+            Nodrošinām, lai tehnoloģijas strādātu jūsu labā, nevis pret jums.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Priekšrocības -->
+<section>
+    <h2>Kāpēc sadarboties ar mums</h2>
+    <div class="advantages">
+        <div class="advantage">
+            <h3>Stratēģiska domāšana</h3>
+            <p>Mēs nedomājam tikai par šodienu — mēs veidojam jūsu uzņēmuma rītdienu, balstoties uz datiem un ilgtermiņa mērķiem.</p>
+        </div>
+        <div class="advantage">
+            <h3>Elastība un precizitāte</h3>
+            <p>Katra sadarbība tiek pielāgota jūsu specifikai, nodrošinot reālus un izmērāmus rezultātus.</p>
+        </div>
+        <div class="advantage">
+            <h3>Tehnoloģiju kompetence</h3>
+            <p>Mēs apvienojam biznesa domāšanu ar tehnisko zināšanu spēku, radot stabilus digitālos risinājumus.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Process -->
+<section>
+    <h2>Kā mēs strādājam</h2>
+    <div class="process">
+        <div class="step">
+            <h3>1. Analīze un izpēte</h3>
+            <p>Mēs sākam ar jūsu uzņēmuma pašreizējās situācijas analīzi un definējam galvenos izaicinājumus.</p>
+        </div>
+        <div class="step">
+            <h3>2. Stratēģijas izstrāde</h3>
+            <p>Veidojam pielāgotu rīcības plānu, kas aptver gan biznesa, gan IT aspektus.</p>
+        </div>
+        <div class="step">
+            <h3>3. Ieviešana un atbalsts</h3>
+            <p>Palīdzam realizēt izstrādāto stratēģiju un nodrošinām nepārtrauktu tehnisko atbalstu.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Kontakti -->
+<section class="contacts">
+    <h2>Sazinieties ar mums</h2>
+    <p>Mēs ticam, ka katrs veiksmīgs projekts sākas ar sarunu.  
+    Rakstiet mums uz <a href="mailto:info@bwdcorporation.pro">info@bwdcorporation.pro</a>  
+    un pastāstiet, kā varam palīdzēt jūsu uzņēmumam augt.  
+    Kopā mēs varam pārvērst idejas reālos rezultātos.</p>
+    <p><strong>Adrese:</strong> 4 - 1B Akas iela, Rīga, LV-1011</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Mail icon">
+</section>
+
+</body>
+</html>
